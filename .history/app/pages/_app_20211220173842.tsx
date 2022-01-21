@@ -1,0 +1,30 @@
+import "tailwindcss/tailwind.css";
+import "../styles/globals.css";
+import type { AppProps } from "next/app";
+import Layout from "./componets/layout";
+import { useState } from "react";
+import { MyIdContext } from "./IdContext";
+import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+import { Provider } from 'next-auth/client'
+
+const cache = new InMemoryCache();
+const client = new ApolloClient({
+  uri: "http://localhost:4000/graphql",
+  cache,
+});
+
+function MyApp({ Component, pageProps }: AppProps) {
+  const [movieid, setMovieid] = useState<string>("");
+
+  return (
+    <ApolloProvider client={client} session={pageProps.session}>
+      <MyIdContext.Provider value={{ movieid, setMovieid }}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </MyIdContext.Provider>
+    </ApolloProvider>
+  );
+}
+
+export default MyApp;

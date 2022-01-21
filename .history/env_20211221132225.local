@@ -1,0 +1,4 @@
+GOOGLE_ID=820941533026-egelsavptgi8ph6fq8i2mudkaq7e2qcq.apps.googleusercontent.com
+GOOGLE_SECRET=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
+
+NEXTAUTH_URL=http://localhost:3000/api/auth

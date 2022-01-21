@@ -1,0 +1,6 @@
+GOOGLE_ID=504362852305-56vu3hheb4rktp4huip11pbpmmonhl8e.apps.googleusercontent.com
+GOOGLE_SECRET=504362852305-56vu3hheb4rktp4huip11pbpmmonhl8e.apps.googleusercontent.com
+
+NEXTAUTH_URL=http://localhost:3000/api/auth
+
+DATABASE_URL=mongodb+srv://1003 EG:peichan1003@cluster0.xeuz6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
