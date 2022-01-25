@@ -47,10 +47,14 @@ console.log(userlist)
         
                 { userlist.map((list: any, i: any) => {
                   return (
-                    <div  key={i} className={styles.item__box}>
+                    <Link href={`/details/${list.movienumber}`}>
+                    <div  key={i} className={styles.item__box}　 onClick={() => {
+                                setMovieid(list.movienumber);
+                                console.log(movieid)
+                              }}>
                      
                         <div className={styles.item__img}>
-                          <Link href={`/details/${list.movienumber}`}>
+                        
                             <img
                               src={`${IMG_PATH}${list.img}`}
                               alt="card image"
@@ -60,14 +64,15 @@ console.log(userlist)
                                 console.log(movieid)
                               }}
                             ></img>
-                          </Link>
+                          
                         </div>
-
+　　　　　　　　　　　　　　　
                         <div className={styles.item__text}>
         　　　　　　　　　　　　　<p>{list?.title || list?.name || list?.original_name}</p>
   　　　　　　　　　　　　　</div>
                       
                     </div>
+                    </Link>
                   );
                 })
               }
