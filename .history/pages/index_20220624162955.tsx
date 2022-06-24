@@ -14,7 +14,7 @@ import { MyIdContext } from "../Context/IdContext";
 import { MySerchContext } from "../Context/serchCotext";
 import React, { useContext } from "react";
 import { useSession } from "next-auth/react";
-import Banner from "./parts/banner";
+import Banner from "./componets/banner";
 
 interface Props {
   id: number;
