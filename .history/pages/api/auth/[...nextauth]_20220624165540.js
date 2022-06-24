@@ -2,7 +2,7 @@ import NextAuth from "next-auth"
 import GoogleProvider from 'next-auth/providers/google'
 import GitHubProvider from "next-auth/providers/github";
 
-
+const secret=process.env.SECRET
 
 
 export default NextAuth({
@@ -29,7 +29,7 @@ export default NextAuth({
   jwt: {
     encryption:true,
   },
-  secret: process.env.NEXT_PUBLIC_SECRET,
+ 
   callbacks:{
     jwt: async ({ token, user }) => {
       user && (token.user = user)
