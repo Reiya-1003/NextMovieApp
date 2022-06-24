@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "DOM",
+      "dom.iterable",
+      "esnext",
+      
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "strictPropertyInitialization": false,
+    "strictNullChecks": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx", "pages/api/auth/[...nextauth].js", "pages/login.js", "pages/api/axios.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "baseUrl": "./",                   /* Base directory to resolve non-absolute module names. */
+  "paths": {
+    "@/*": ["./src/*"]
+  },                                 /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
+
+}
+
