@@ -49,4 +49,4 @@ export const DELETE_FAVO = gql`
   }
 `;
 
-export default {} ;
+export {} ;
