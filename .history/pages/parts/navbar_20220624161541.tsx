@@ -70,7 +70,7 @@ export default function Navber() {
     <div className={`${styles.nav} ${show && styles.nav__black}`}>
       <div className={styles.nav__contents}>
         <div className={styles.nav__logo}>
-          <a href="https://movieflix-tau.vercel.app/" className={styles.nav__title}>
+          <a href="http://localhost:3000/" className={styles.nav__title}>
             MOVIEFLIX
           </a>
 
