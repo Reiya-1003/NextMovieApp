@@ -22,11 +22,12 @@ export const FAVO_LIST = gql`
 // `;
 
 export const ADD_FAVO = gql`
-  mutation($title: String!, $img: String!, $movienumber: Int!, $userId: ID!) {
-    addFavo(title: $title, img: $img, movienumber: $movienumber,userId: $userId) {
+  mutation($title: String!, $img: String!, $movienumber: Int!, $userId: String!) {
+    addFavo(title: $title, img: $img, movienumber: $movienumber, userId: $userId) {
       title
       img
       movienumber
+      userId
     }
   }
 `;
@@ -46,3 +47,5 @@ export const DELETE_FAVO = gql`
     }
   }
 `;
+
+export {} 

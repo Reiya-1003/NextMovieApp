@@ -47,3 +47,5 @@ export const DELETE_FAVO = gql`
     }
   }
 `;
+
+export {} 
