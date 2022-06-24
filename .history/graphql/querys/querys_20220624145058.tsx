@@ -1,3 +1,12 @@
+export {gql} ;
+
+
+
+
+
+
+
+
 import { gql } from "apollo-boost";
 
 
