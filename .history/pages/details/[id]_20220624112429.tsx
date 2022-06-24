@@ -1,4 +1,4 @@
-import { MyIdContext } from "../../Context/IdContext";
+import { MyIdContext } from "../IdContext";
 import { useContext, useEffect, useState , Dispatch,SetStateAction} from "react";
 import { ADD_FAVO, FAVO_LIST, DELETE_FAVO } from "../../graphql/querys/querys";
 import { useMutation, useQuery } from "@apollo/react-hooks";
