@@ -25,7 +25,7 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx", "graphql/querys/querys.tsx","pages/api/auth/[...nextauth].js", "pages/login.js", "pages/api/axios.js", "pages/api/auth/[...nextauth].js"
+    "**/*.tsx", "graphql/querys/query.tsx","pages/api/auth/[...nextauth].js", "pages/login.js", "pages/api/axios.js", "pages/api/auth/[...nextauth].js"
   ],
   "exclude": [
     "node_modules"
