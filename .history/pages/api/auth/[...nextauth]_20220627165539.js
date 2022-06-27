@@ -22,8 +22,8 @@ export default NextAuth({
       },
     }),
     GitHubProvider({
-      clientId: "Iv1.deb2b4d5483aedfb",
-      clientSecret: "90436a6d97e8edf2108633e2bc02a95552fc5df5"
+      clientId: process.env.GITHUB_CLIENT_ID,
+      clientSecret: process.env.GITHUB_CLIENT_SECRET,
     }),
     // ...add more providers here
   ],
