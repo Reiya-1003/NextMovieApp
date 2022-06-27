@@ -1,15 +1,9 @@
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import GitHubProvider from "next-auth/providers/github";
-import { signIn, signOut } from 'next-auth/client';
-
-
 
 export default NextAuth({
-
-  
   // Configure one or more authentication providers
-  
   providers: [
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID,
@@ -28,8 +22,6 @@ export default NextAuth({
     }),
     // ...add more providers here
   ],
-
-  
   jwt: {
     encryption: true,
   },

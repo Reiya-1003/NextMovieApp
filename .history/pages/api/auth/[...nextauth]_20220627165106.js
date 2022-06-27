@@ -29,7 +29,14 @@ export default NextAuth({
     // ...add more providers here
   ],
 
-  
+  callbacks: {
+    // async signIn({ user, account, profile, email, credentials }) { return true },
+    // async redirect({ url, baseUrl }) { return baseUrl },
+    // async session({ session, token, user }) { return session },
+    // async jwt({ token, user, account, profile, isNewUser }) { return token }
+    signIn('google'{ callbackUrl: `http://localhost/foo` }),
+signOut({ callbackUrl: `http://localhost/foo` }),
+  },
   jwt: {
     encryption: true,
   },
