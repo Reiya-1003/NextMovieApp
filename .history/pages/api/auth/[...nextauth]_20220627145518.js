@@ -25,7 +25,7 @@ export default NextAuth({
   jwt: {
     encryption: true,
   },
-  secret: "E/QjdtprR8TBD/NEk5nVAidWlddovmMdtRDLZcJqWF8=",
+  secret: process.env.NEXTAUTH_SECRET,
   callbacks: {
     jwt: async ({ token, user }) => {
       user && (token.user = user);
