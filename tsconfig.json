@@ -4,8 +4,7 @@
     "lib": [
       "DOM",
       "dom.iterable",
-      "esnext",
-      
+      "esnext"
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -18,22 +17,26 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": false,
+    "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true
   },
   "include": [
     "next-env.d.env.ts",
     "**/*.ts",
-    "**/*.tsx","pages/api/auth/[...nextauth].js", "pages/login.js", "pages/api/axios.js", "graphql/querys/querys.js"
+    "**/*.tsx",
+    "pages/api/auth/[...nextauth].js",
+    "pages/login.js",
+    "pages/api/axios.js",
+    "graphql/querys/querys.js"
   ],
   "exclude": [
     "node_modules"
   ],
-  "baseUrl": "./",                   /* Base directory to resolve non-absolute module names. */
+  "baseUrl": "./", /* Base directory to resolve non-absolute module names. */
   "paths": {
-    "@/*": ["./src/*"]
-  },                                 /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
-
+    "@/*": [
+      "./src/*"
+    ]
+  } /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
 }
-
