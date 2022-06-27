@@ -44,9 +44,9 @@ export default NextAuth({
     },
     redirect: async (url, baseurl) => {
       if (url === "/profile") {
-        return Promise.resolve("https://movieflix-tau.vercel.app/");
+        return Promise.resolve("/");
       }
-      return Promise.resolve("https://movieflix-tau.vercel.app/");
+      return Promise.resolve("/");
     },
   },
 });
